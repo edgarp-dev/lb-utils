@@ -5,5 +5,10 @@ services:
     image: ghcr.io/edgarp-dev/lb-sheets-script:latest
     container_name: lb-sheets-script
     environment:
-      - VAR1=${VAR1}
-      - VAR2=${VAR2}
+      - CLIENT_EMAIL=script@lifting-buddy-441414.iam.gserviceaccount.com
+      - ENV=prod
+      - PRIVATE_KEY=PRIVATE_KEY
+      - PRIVATE_KEY_ID=PRIVATE_KEY_ID
+      - SPREADSHEET_ID=1YkIBg8lkTdpIKVGWPBeaDKt1W0nke7mRw1jMY2_wzUo
+      - SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1ubmFvamFjc3R5amx3dW5mb2R6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mjk4OTk4NTEsImV4cCI6MjA0NTQ3NTg1MX0.Owlg7z4h3CcYRvN64eVkMBTX37BY_Ds8dDxSn5Pmpt8
+      - SUPABASE_URL=https://mnnaojacstyjlwunfodz.supabase.co

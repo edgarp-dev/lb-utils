@@ -149,9 +149,20 @@ async function getRoutinesData(userId: number, pageSize: number = 50) {
     }
 }
 
+function getTodayDateWithFormat(): string {
+    const today = new Date();
+    const day = String(today.getDate()).padStart(2, '0');
+    const month = String(today.getMonth() + 1).padStart(2, '0');
+    const year = today.getFullYear();
+
+    const formattedDate = `${day}/${month}/${year}`;
+    return formattedDate;
+}
+
 const main = async () => {
     try {
-        console.log('Retrieving routines data');
+        const todayDate = getTodayDateWithFormat();
+        console.log(`[${todayDate}] Retrieving routines data`);
 
         const routinesData = await getRoutinesData(1);
         if (!routinesData || routinesData.length === 0) {

@@ -4,6 +4,7 @@ services:
   lb-sheets-script:
     image: ghcr.io/edgarp-dev/lb-sheets-script:latest
     container_name: lb-sheets-script
+    restart: unless-stopped
     environment:
       - CLIENT_EMAIL=script@lifting-buddy-441414.iam.gserviceaccount.com
       - ENV=prod

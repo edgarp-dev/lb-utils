@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  lb-sheets-script:
+    image: ghcr.io/edgarp-dev/lb-sheets-script:latest
+    container_name: lb-sheets-script
+    environment:
+      - VAR1=${VAR1}
+      - VAR2=${VAR2}

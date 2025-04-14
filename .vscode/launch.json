@@ -1,0 +1,16 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Debug dump_db",
+			"skipFiles": ["<node_internals>/**"],
+			"program": "${workspaceFolder}/db/dump_db.js",
+			"runtimeArgs": ["--experimental-modules"],
+			"envFile": "${workspaceFolder}/db/.env",
+			"console": "integratedTerminal",
+			"cwd": "${workspaceFolder}/db"
+		}
+	]
+}

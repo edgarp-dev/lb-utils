@@ -1,0 +1,16 @@
+{
+	"name": "supabase-schema-exporter",
+	"version": "1.0.0",
+	"description": "Tool to export Supabase database schema and data to a local file",
+	"main": "dump_db.js",
+	"scripts": {
+		"dump_db": "node dump_db.js"
+	},
+	"dependencies": {
+		"@supabase/supabase-js": "^2.49.4",
+		"dotenv": "^16.5.0",
+		"fs-extra": "^11.3.0",
+		"pg": "^8.14.1"
+	},
+  "type": "module"
+}
